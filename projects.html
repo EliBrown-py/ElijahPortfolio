@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Elijah Ibidayo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Elijah Ibidayo</a>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main style="margin-top: 70px;">
+        <!-- HERO -->
+        <section class="projects-hero">
+            <div class="container">
+                <h1>Projects</h1>
+                <p class="projects-subtitle">
+                    A selection of the applications and systems I've built while growing as a
+                    full-stack (MERN) developer and IT operations specialist.
+                </p>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projects-content">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- PROJECT 1: Movie Web App -->
+                    <div class="project-card-detailed featured">
+                        <div class="project-info">
+                            <h3>🎬 MoviePro - Movie Web App</h3>
+                            <p class="project-description">
+                                MoviePro is a full-stack web application that lets users discover new movies, register
+                                for an account, and save titles to a personal watchlist.
+                            </p>
+                            
+                            <div class="project-details">
+                                <h4>Problem & Goal</h4>
+                                <p>
+                                    I wanted to build more than a simple front-end project: a real application with
+                                    authentication, persistent data, email notifications, and cloud-backed logic that
+                                    could scale beyond a local environment.
+                                </p>
+                                
+                                <h4>Technical Approach</h4>
+                                <p>
+                                    Our team used <strong>MongoDB</strong> and <strong>Cloud Firestore</strong> to store movie data and user
+                                    accounts. A user can register with their first name, last name, email etc..
+                                    then log in to access their profile, account details, and watchlist.
+                                    We used <strong>Cloud Functions</strong> to handle backend operations such as watchlist
+                                    updates and triggering transactional emails.
+                                </p>
+                                
+                                <h4>Highlights</h4>
+                                <ul>
+                                    <li>Full authentication flow with registration, login, and user profiles.</li>
+                                    <li>Persistent watchlist stored in MongoDB/Firestore.</li>
+                                    <li>Serverless <strong>Cloud Functions</strong> for backend logic and email triggers.</li>
+                                    <li><strong>SendGrid</strong> integration for automated welcome emails.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB / Firestore</span>
+                                <span class="tech-tag">REST APIs</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://movie-app-signup.uc.r.appspot.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Live Demo</a>
+                                <a href="https://github.com/EliBrown-py/MoviePro" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Code on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 2: Photography Portfolio Website -->
+                    <div class="project-card-detailed">
+                        <div class="project-info">
+                            <h3>📸 Photography Portfolio Website</h3>
+                            <p class="project-description">
+                                A clean, responsive portfolio site for a photography brand, showcasing work using cards and image galleries.
+                                Deployed on GitHub Pages to practice static hosting and custom domain setup.
+                            </p>
+                            
+                            <div class="project-details">
+                                <h4>Problem & Goal</h4>
+                                <p>
+                                    Many creatives struggle to present their work in a simple, professional way online.
+                                    I built this site to provide an easy-to-maintain portfolio and sharpen my HTML/CSS layout skills.
+                                </p>
+                                
+                                <h4>Technical Approach</h4>
+                                <p>
+                                    Built with semantic HTML and modern CSS (flexbox and grid). Used reusable components
+                                    (cards and sections) and optimized images for faster loading. Hosted via GitHub Pages.
+                                </p>
+                                
+                                <h4>Highlights</h4>
+                                <ul>
+                                    <li>Fully responsive layout for mobile, tablet, and desktop.</li>
+                                    <li>Simple structure that makes it easy to update photos and text.</li>
+                                    <li>Deployed using GitHub Pages — no backend required.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS / Flexbox / Grid</span>
+                                <span class="tech-tag">Bootstrap (cards & layout)</span>
+                                <span class="tech-tag">GitHub Pages</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://elibrown-py.github.io/portfolio/index.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Live Site</a>
+                                <a href="https://github.com/EliBrown-py/portfolio" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Code on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 3: IT Operations / Onboarding Automation -->
+                    <div class="project-card-detailed">
+                        <div class="project-info">
+                            <h3>⚙️ IT Operations & Onboarding Automation</h3>
+                            <p class="project-description">
+                                A collection of internal tools, templates, and process improvements created while working
+                                in IT operations and support roles.
+                            </p>
+                            
+                            <div class="project-details">
+                                <h4>Problem & Goal</h4>
+                                <p>
+                                    Onboarding new users and supporting events involved scattered information and manual steps.
+                                    I wanted to make this smoother, faster, and easier to repeat.
+                                </p>
+                                
+                                <h4>Technical Approach</h4>
+                                <p>
+                                    Helped design documentation and lightweight tools using platforms like Jira, Smartsheet,
+                                    Formstack, and SharePoint. Standardized checklists and created a risk/issue tracker to
+                                    help teams see status at a glance.
+                                </p>
+                                
+                                <h4>Impact</h4>
+                                <ul>
+                                    <li>Reduced onboarding and event prep time by organizing information in one place.</li>
+                                    <li>Improved communication between technical and non-technical stakeholders.</li>
+                                    <li>Provided a reusable foundation for future process automation.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag">Jira</span>
+                                <span class="tech-tag">Smartsheet</span>
+                                <span class="tech-tag">Formstack</span>
+                                <span class="tech-tag">SharePoint</span>
+                                <span class="tech-tag">Process Design</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Case Study (Coming Soon)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Elijah Ibidayo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Page-specific styles (optional – move to styles.css later) -->
+    <style>
+        .projects-hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .projects-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .projects-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            max-width: 720px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .projects-content {
+            padding: 80px 0;
+        }
+
+        .projects-grid {
+            display: grid;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .project-card-detailed {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(15,23,42,0.12);
+            overflow: hidden;
+        }
+
+        .project-card-detailed.featured {
+            border-left: 5px solid #fbbf24;
+        }
+
+        .project-info {
+            padding: 2rem;
+        }
+
+        .project-info h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.75rem;
+            color: #0f172a;
+        }
+
+        .project-description {
+            color: #64748b;
+            margin-bottom: 1.5rem;
+            font-size: 1.02rem;
+            line-height: 1.7;
+        }
+
+        .project-details h4 {
+            color: #0f172a;
+            margin: 1.25rem 0 0.35rem;
+            font-size: 1rem;
+        }
+
+        .project-details p,
+        .project-details ul {
+            color: #64748b;
+            line-height: 1.7;
+            font-size: 0.96rem;
+        }
+
+        .project-details ul {
+            padding-left: 1.2rem;
+        }
+
+        .project-tech {
+            display: flex;
+            gap: 0.5rem;
+            margin: 1.5rem 0 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .tech-tag {
+            background: #e2e8f0;
+            color: #1e293b;
+            padding: 0.35rem 0.6rem;
+            border-radius: 999px;
+            font-size: 0.85rem;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .project-links .btn {
+            padding: 0.6rem 1.2rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .projects-hero h1 {
+                font-size: 2.1rem;
+            }
+
+            .projects-hero {
+                padding: 70px 0;
+            }
+
+            .project-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+    <script>
+        function toggleMobileMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
